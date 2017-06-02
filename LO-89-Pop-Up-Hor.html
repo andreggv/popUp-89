@@ -1,0 +1,778 @@
+<html>
+
+<head>
+
+	
+
+	<style type="text/css">
+		
+		.action-button{
+
+			width: 20%;
+			height: 100%;
+			padding-right: 2%;
+			transition: all 0.6s ease;
+
+
+		}
+
+		.action-button-50{
+
+			width: 100%;
+			height: 100%;
+			padding-right: 2%;
+			transition: all 0.6s ease;
+
+
+		}
+
+		.botao:hover{
+
+			 -ms-transform: scale(1.3, 1.3); /* IE 9 */
+		    -webkit-transform: scale(1.3, 1.3); /* Safari */
+		    transform: scale(1.3, 1.3);
+		    border-radius: 10px;
+		}
+
+
+
+		.action-button:hover{
+			 -ms-transform: scale(1.1, 1.1); /* IE 9 */
+		    -webkit-transform: scale(1.1, 1.1); /* Safari */
+		    transform: scale(1.1, 1.1);
+
+		}
+
+		.action-text{
+
+			color: #4172e2;
+			font-size: 20px;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight: 300;
+			margin: auto;
+			text-align: center;
+		}
+
+		.action-text-50{
+
+			color: #4172e2;
+			font-size: 20px;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight: 300;
+			margin: auto;
+			text-align: center;
+		}
+
+		.button{
+
+			background-color: white;
+			border-radius: 5px;
+			width: 100%;
+			height: 75px;
+
+
+			display: flex;
+  			align-items: center;
+  			justify-content: center;
+
+			-webkit-box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+            -moz-box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+            box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+
+		}
+
+		.button-50{
+
+			background-color: white;
+			border-radius: 5px;
+			width: 60%;
+			height: 75px;
+
+			margin: auto;
+			display: block;
+
+
+			display: flex;
+  			align-items: center;
+  			justify-content: center;
+
+			-webkit-box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+            -moz-box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+            box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+
+            transition: all 0.6s ease;
+
+
+		}
+
+		.button-50:hover{
+
+			 -ms-transform: scale(1.1, 1.1); /* IE 9 */
+		    -webkit-transform: scale(1.1, 1.1); /* Safari */
+		    transform: scale(1.1, 1.1);
+
+		}
+
+		.button-bug{
+
+			background-color: #4172e2;
+			border-radius: 5px;
+			width: 60%;
+			height: 75px;
+
+			margin: auto;
+			display: block;
+
+
+			display: flex;
+  			align-items: center;
+  			justify-content: center;
+
+			-webkit-box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+            -moz-box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+            box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+
+            transition: all 0.6s ease;
+
+		}
+
+		.button-bug:hover{
+
+			 -ms-transform: scale(1.1, 1.1); /* IE 9 */
+		    -webkit-transform: scale(1.1, 1.1); /* Safari */
+		    transform: scale(1.1, 1.1);
+
+		}
+
+		
+
+		.action-text-dark{
+
+			color: white;
+			font-size: 20px;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight: 300;
+			margin: auto;
+			text-align: center;
+		}
+
+		.action-text-bug{
+
+			color: white;
+			font-size: 20px;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight: 300;
+			margin: auto;
+			text-align: center;
+		}
+
+	
+
+		.button-dark{
+
+			background-color: #4172e2;
+			border-radius: 5px;
+			width: 100%;
+			height: 75px;
+
+
+			display: flex;
+  			align-items: center;
+  			justify-content: center;
+
+			-webkit-box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+            -moz-box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+            box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+
+		}
+
+    	.feature{
+
+    		border-collapse: collapse;
+    		border-spacing: 0;
+    		width: 25%;
+    		padding-left: 2%;
+    		
+    	}
+
+    	.linha-features{
+
+    		border-collapse: separate;
+    		border-spacing: 5px;
+    		margin: 0px;
+    		width: 100%;
+    		margin-bottom: 25px;
+    		
+    	}
+
+    	.cabecalho{
+
+    		background-color: white;
+    	}
+
+    	.img-feature{
+
+    		height: 33%;
+    		background-color: #2c2c2c;
+    	}
+
+    	.text-feature{
+
+    		border-collapse: collapse;
+    		border-spacing: 0;
+    		margin:0;
+    		padding-left: 2%;
+    		padding-top: 3%;
+    		padding-bottom: 3%;
+    		width: 60%;
+
+    	}
+
+    	.titulo{
+
+    		color: #d3d3d3;
+    		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    		font-size: 4vmax; 
+    		font-weight: 300;
+    		line-height: 2vmax;
+    		margin-top: 30px;
+    		text-decoration: none;
+    		vertical-align: top;	
+    	}
+
+    	.MainTitle{
+
+    		color: #343434;
+    		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    		font-size: 5vmax; 
+    		font-weight: 100;
+    		line-height: 2vmax;
+    		margin-top: 30px;
+    		text-align: center;	
+    		text-decoration: none;
+    		vertical-align: top;
+
+    	}
+
+    	.SubTitleMain{
+
+    		color: #3044a3;
+    		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    		font-size: 3vmax; 
+    		font-weight: 100;
+    		margin-left: 0;
+    		text-decoration: none;
+    		text-align: center;
+
+    	}
+
+    	.subtitulo{
+
+    		color: #c5c4d4;
+    		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    		font-size: 3vmax; 
+    		font-weight: 100;
+    		margin-left: 0;
+    		text-decoration: none;
+    	}
+
+    	.itens-lista{
+
+    		color: #c5c4d4;
+    		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    		font-size: 2.5vmax; 
+    		font-weight: 100;
+    		margin-left: 0;
+    		text-decoration: none;
+    	}
+
+    	.itens-lista-bug{
+
+    		color: #3044a3;
+    		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    		font-size: 20px; 
+    		font-weight: 100;
+    		margin-left: 0;
+    		text-decoration: none;
+    		text-align: center
+    	}
+
+    	.texto{
+
+    		color: #ffffff;
+    		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    		font-size: 1.8vmax; 
+    		font-weight: 300;
+    		line-height: 3vmax;
+    		margin-top: 30px;
+    		text-decoration: none;
+    		width: 70%;
+    			
+    	}
+
+    	.titulo-dark{
+
+    		color: #3044a3;
+    		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    		font-size: 4vmax; 
+    		font-weight: 300;
+    		line-height: 2vmax;
+    		margin-top: 30px;
+    		text-decoration: none;
+    		vertical-align: top;	
+    	}
+
+    	.subtitulo-dark{
+
+    		color: #5345de;
+    		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    		font-size: 3vmax; 
+    		font-weight: 100;
+    		margin-left: 0;
+    		text-decoration: none;
+    	}
+
+    	.subtitulo-50{
+
+    		color: #c5c4d4;
+    		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    		font-size: 3.2vmax; 
+    		font-weight: 300;
+    		margin-left: 12px;
+    		margin-top: -1%;
+    		text-decoration: none;
+    		text-align: left;
+    	}
+
+    	.texto-dark{
+
+    		color: #4172e2;
+    		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    		font-size: 1.8vmax; 
+    		font-weight: 300;
+    		line-height: 3vmax;
+    		margin-top: 30px;
+    		text-decoration: none;
+    		width: 70%;
+    			
+    	}
+
+    	#primeira-linha-features{
+
+    		background-color: #5345de;
+    		height: 33%;
+
+    	}
+
+    	
+
+    	#segunda-linha-features > td{
+
+    		margin-top: 20px;
+    		
+    	}
+
+    	#segunda-linha-features{
+
+    		background-color: #3044a3;
+    		height: 33%;
+    		padding-top: 5%;
+    	}
+
+    	#terceira-linha-features{
+
+    		background-color: #ebebeb;
+    		height: 34%;
+    		margin-bottom: 20px !important;
+    	}
+
+    	#quarta-linha-features{
+
+    		background-color: #ebebeb;
+    		height: 34%;
+    		margin-bottom: 20px !important;
+    	}
+
+    	#quinta-linha-features{
+
+    		background-color: #4172e2;
+    		height: 34%;
+    		margin-bottom: 20px !important;
+    	}
+
+    	#sexta-linha-features{
+
+    		background-color: #5345de;
+    		height: 34%;
+    		margin-bottom: 20px !important;
+    	}
+
+    	#setima-linha-features{
+
+    		background-color: #ebebeb;
+    		height: 34%;
+    		margin-bottom: 20px !important;
+    	}
+
+    	td{
+
+    		margin-bottom: 20px !important;
+    	}
+
+    	.question{
+    		color: #ffffff;
+    		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;"; 
+    		font-size: 35px; 
+    		font-weight: 300;
+    		text-align: center;
+    	}
+
+	</style>
+
+</head>
+
+<body style="height: 125%; width: 100%;">
+
+	<header style="height: 25%; width: 100%;">
+
+		<table class="cabecalho" style=" height: 100%; width: 100%;">
+
+			<tr>
+				<td> 
+
+					<img src="LawOffice-Logo.png" align="center" style="max-width: 250px; display: block; margin-left: 5%;" />
+
+				</td>
+
+				<td>
+
+					<h1 class="MainTitle"> Muito mais completo </h1>
+					<h2 class="SubTitleMain"> A maior atualização da história do Law Office chegou!</h1>
+
+				</td>
+				
+			</tr>	
+
+		</table>	
+
+	</header>
+
+	<!-- Tabela de features -->
+
+	<!-- BOTAO HELP <div class="botao" style="background-color: #8badfa; border-radius: 60px; width: 60px; height: 60px; position: fixed; top: 90vh; left: 90vw; -webkit-box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+            -moz-box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7);
+            box-shadow: 6px 7px 22px 0px rgba(64,64,64,0.7); transition: all 0.6s ease; z-index: 100; display: flex;
+  			align-items: center;
+  			justify-content: center;"><h1 class="question">?</h1></div>-->
+
+	<table class ="tabela-features" style="height: 95%; width: 100%;" cellspacing="0" cellpadding="0">
+
+		<!-- Primeira linha de features -->
+
+		<tr class="linha-features" id="primeira-linha-features">
+
+			<!--Cada linha é dividida em 4 colunas, com 3 linhas cada -->
+		
+			<td class="feature" style="overflow: hidden;">
+				
+				<img src="GED.png" style="max-height: 100%;" />
+						
+			</td>
+
+			<td class="text-feature" valign="top">
+
+				<h1 class="titulo">Integração com M-Files</h1>
+				<h2 class="subtitulo">O melhor GED do mundo</h2>
+				<h3 class="texto">Disponibilizamos o mais avançado GED para o mercado jurídico, o M4LAW, totalmente integrado com o Law Office</h3>
+				
+						
+			</td>
+
+			<td class="action-button">
+
+				<div class="button">
+				<h3 class="action-text">Conheça mais</h3>
+				</div>
+
+			</td>
+
+			
+
+
+		</tr>
+
+		<tr style="background-color: white; height: 08px;"/>
+
+		<!-- Segunda linha de features -->
+
+		<tr class="linha-features" id="segunda-linha-features" style="max-height: 34%; ">
+
+			<td class="feature" style="overflow: hidden; whitespace: nowrap;" >
+				
+				<img src="Mobile.png" style="margin-left: 10px; margin-top: 10px; max-height: 25%;" />
+						
+			</td>
+
+			<td class="text-feature">
+
+				<h1 class="titulo">Law Office Mobile</h1>
+				<h2 class="subtitulo">O Law Office no seu telefone </h2>
+				<h3 class="texto">Atualize casos, agenda, confira publicações, lance despesas e horas debitáveis, tudo diretamente no celular. Disponível inicialmente para iOS.</h3>
+				
+						
+			</td>
+
+			<td class="action-button">
+
+				<div class="button">
+				<h3 class="action-text">Veja mais</h3>
+				</div>
+
+			</td>
+
+
+		</tr>
+
+		<tr style="background-color: white; height: 08px;"/>
+
+		<!--<tr class="linha-features" id="terceira-linha-features">
+
+			<td class="feature" style="overflow: hidden;">
+				
+				<img src="Results.png" style="max-height: 80%;" />
+						
+			</td>
+
+			<td class="text-feature" valign="top">
+
+				<h1 class="titulo-dark">Análise de resultados</h1>
+				<h2 class="subtitulo-dark">Quais são as equipes mais rentáveis?</h2>
+				<h3 class="texto-dark">Agora você terá o resultado do escritório por área e por tipo de receita/despesa. Exporte para Excel e crie análises ricas e profundas. </h3>
+				
+						
+			</td>
+
+			<td class="action-button">
+
+				<div class="button-dark">
+				<h3 class="action-text-dark">Comece a usar</h3>
+				</div>
+
+			</td>
+
+
+		</tr>-->
+
+		
+
+		<tr class="linha-features" id="quarta-linha-features">
+
+			<td class="feature" style="overflow: hidden;">
+				
+				<img src="LEDES-2.png" style="max-height: 55%;" />
+						
+			</td>
+
+			<td class="text-feature" valign="top">
+
+				<h1 class="titulo-dark">LEDES</h1>
+				<h2 class="subtitulo-dark">Notas eletrônicas com o padrão LEDES</h2>
+				<h3 class="texto-dark" style="width: 80%;">Agora o Law Office pode gerar notas de honorários eletrônicas (e-billing) no padrão internacional LEDES (Legal Electronic Data Exchange Standard). Cada vez mais clientes estrangeiros exigem receber nesse formato.</h3>
+				
+						
+			</td>
+
+			<td class="action-button">
+
+				<div class="button-dark">
+				<h3 class="action-text-dark">Saiba como ativar</h3>
+				</div>
+
+			</td>
+
+
+		</tr>	
+
+		<tr style="background-color: white; height: 08px;"/>	
+
+		<!--<tr class="linha-features" id="quinta-linha-features">
+
+			<td class="feature" style="overflow: hidden;">
+				
+				<img src="Performance.png" style="max-height: 95%;" />
+						
+			</td>
+
+			<td class="text-feature" valign="top">
+
+				<h1 class="titulo">Performance</h1>
+				<h2 class="subtitulo">O Law Office está acelerado!</h2>
+				<h3 class="texto" style="width: 90%;">Para melhorar a experiência de nossos usuários, aceleramos a velocidade do Law Office. Sabemos que ainda não está ideal. Nas próximas semanas nossos clientes ainda verão outras melhorias de performance do sistema.</h3>
+				
+						
+			</td>
+
+			<td class="action-button">
+
+				<div class="button">
+				<h3 class="action-text">Conheça mais</h3>
+				</div>
+
+			</td>
+
+
+		</tr>-->	
+
+		<tr style="background-color: white; height: 08px;"/>	
+
+		<tr class="linha-features" id="sexta-linha-features">
+
+			<td class="feature" style="overflow: hidden; padding-top: 2%;">
+				
+				<img src="Casos.png" style="max-height: 105% !important;" />
+						
+			</td>
+
+			<td class="text-feature" valign="top">
+
+				<h1 class="titulo">Captura de andamentos</h1>
+				<h2 class="subtitulo">Atualizações automáticas dos seus casos</h2>
+				<h3 class="texto" style="width: 90%;">Adicionamos a funcionalidade de robô de captura de todos os andamentos diretamente de dezenas de sites dos tribunais. Trata-se de serviço à parte das publicações</h3>
+				
+						
+			</td>
+
+			<td class="action-button">
+
+				<div class="button">
+				<h3 class="action-text">Veja como utilizar</h3>
+				</div>
+
+			</td>
+
+
+		</tr>	
+
+		<tr style="background-color: white; height: 08px;"/>	
+
+		<tr class="linha-features" id="setima-linha-features">
+
+			<td class="feature" style="overflow: hidden; padding-top: 2%;">
+				
+				<img src="Diario.png" style="max-height: 95% !important; margin-left: 10px;" />
+						
+			</td>
+
+			<td class="text-feature" valign="top">
+
+				<h1 class="titulo-dark">Captura de publicações</h1>
+				<h2 class="subtitulo-dark">Melhor gestão de prazos</h2>
+				<h3 class="texto-dark" style="width: 90%;">Melhoramos o serviço de acompanhamento de publicações. Ele está mais rápido, com maior abrangência e com novos filtros. Reduza o tempo gasto com a gestão dos prazos</h3>
+				
+						
+			</td>
+
+			<td class="action-button">
+
+				<div class="button-dark">
+				<h3 class="action-text-dark">Saiba como ativar</h3>
+				</div>
+
+			</td>
+
+
+		</tr>	
+
+		<tr style="background-color: white; height: 15px;"/>
+
+	</table>
+
+
+
+	<table class="mais-mudancas" style="height: 55%; width: 100%;" cellspacing="0" cellpadding="0">
+
+		<tr class="linha-features" id="quarta-linha-features">
+			<td style="background-color: red; width: 60%;">
+				<table cellspacing="0" cellpadding="0" style=" height: 100%; width: 100%;">
+					<tr style="width: 100%; height: 75%;">
+
+						<td style="background-color: #5345de; width: 30%; max-height:0%;">
+
+							<img src=">50-2.png" style="max-height: 130px !important; margin-left: 10px; margin-top: 0%;" />
+							<h2 class="subtitulo-50">novas funcionalidades</h2>
+							<br><br>
+
+						</td>
+
+						<td style="background-color: #5345de; height: 100%; width: 70%; overflow-wrap: break-word; overflow-x: scroll;">
+							
+							<ul style="color: #ffffff; text-align: left; margin-left: 0px; margin-top: 0%; list-style: none; width: 100%; white-space: normal;">
+								<li class="itens-lista"> Lançamento de horas em massa</li><br>
+								<li class="itens-lista"> Novos relatórios de contratos e tarefas </li><br>
+								<li class="itens-lista"> Função de "auto-complete"</li><br>	
+							</ul>	
+
+
+						</td>
+
+						
+					</tr>
+
+					<tr style="background-color: #5345de; width: 100%; height: 25%;">
+
+						<td style="background-color: #5345de; width: 100% !important; height: 100%; padding-bottom: 3%; width: 100%;" colspan="2">
+
+							<div style="width: 100%;">
+								<div class="button-50">
+									<h3 class="action-text-50">Veja a lista completa</h3>
+								</div>
+							</div>
+
+						</td>
+
+						
+
+					</tr>	
+
+
+
+				</table>
+
+
+			</td>
+
+			<td style="background-color: #ebebeb; width: 40%;">
+
+				<img src="Bug.png" style="max-height: 180px !important; display: block; margin: auto;" />
+				<ul style="color: #ffffff; font-size: 18px; text-align: center; margin-left: 0px; margin-top: 5%; list-style: none;">
+							<li class="itens-lista-bug"> Ordenação de relatórios</li><br>
+							<li class="itens-lista-bug"> Uso de certas opções na "busca avançada" </li><br>
+							<li class="itens-lista-bug"> Ajustes no add on para Word</li><br>	
+							<li class="itens-lista-bug"> Filtros de "ativo-inativo" em contratos</li><br>	
+				</ul>	
+
+				<div style="width: 100%;">
+					<div class="button-bug">
+						<h3 class="action-text-bug">Veja todas as correções</h3>
+					</div>
+				</div>
+
+			</td>
+		</tr>
+
+
+	</table>
+
+	<!--<table class="tabela-rodape" style="height: 20%; width: 100%;">
+
+		<tr class="linha-rodape" style="background-color: cyan; height: 100%; width: 100%;">
+
+		<td></td>
+
+		</tr>
+
+	</table>-->				
+
+</body>
+
+</html>
